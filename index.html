@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+<body class="relative">
+  <nav class="text-white p-6 bg-[#3760a1] fixed top-0 w-full z-40">
+    <div class="flex items-center justify-between px-6">
+      <i class="fa-solid fa-laptop text-color1 scale-[3] hidden md:block"></i>
+      <div class="hidden md:flex space-x-8 font-bold text-2xl">
+        <div class="text-color1 hover:cursor-pointer hover:text-color3 hover:translate-y-0.5 hover:transition-all" id="popUp">About</div>
+        <a href="#works" class="text-color1 hover:text-color3 hover:translate-y-0.5 hover:transition-all">Works</a>
+        <a href="#contact" class="text-color1 hover:text-color3 hover:translate-y-0.5 hover:transition-all">Contact</a>
+      </div>
+    </div>
+
+    <div class="md:hidden">
+      <button type="button" id="menu-btn" class=" close hamburger z-40 md:hidden focus:outline-none block">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+    <div id="menu" class="absolute hidden p-6 rounded-lg bg-color5 left-6 right-6 top-20 z-50">
+      <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold rounded-sm text-white">
+        <div class="w-full text-center scroll-smooth hover:cursor-pointer" id="pop">About</div>
+        <a href="#works" class="w-full text-center">Works</a>
+        <a href="#contact" class="w-full text-center">Contacts</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex items-center justify-center w-full transition-all ease-in-out duration-500 hero" id="hero">
+    <div class="container relative h-[100vh] px-6 flex flex-col items-center justify-center pt-12">
+      <!-- intro -->
+      <div class="text-white text-center md:text-left w-full md:pl-32">
+        <h1 class="text-5xl md:text-7xl font-black">Hello! I'am <span class="italic text-color1">Paolo</span></h1>
+        <p class="text-3xl md:text-5xl mt-2">a<span class="font-600 text-color1 italic font-bold"> Web Developer</span></p>
+        <p class="mt-4 text-3xl text-color5 md:text-4xl">
+          I am a self taught developer who loves learning new things.
+        </p>
+      </div>
+      <button class="bg-red-400 rounded-full absolute bottom-24 hover:opacity-70 p-3" id="aboutBtn">
+        About Me
+      </button>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="hidden items-center justify-center w-full bg-gradient-to-b from-gray-200" id="about">
+    <div class="mx-auto px-6 w-full h-[100vh] text-center items-center justify-center text-white flex flex-col md:flex-row md:justify-around md:text-left md:my-auto pt-12" >
+      <!-- intro -->
+      <img src="./img/Profile.jpg" alt="" class="h-36 md:h-[75%] mt-10 object-cover rounded-md md:w-1/3">
+      <div class="text-color5 text-xl md:text-2xl md:w-1/2">
+        <h3 class="text-color1 text-2xl md:text-3xl my-4">Paolo Guray</h3>
+        <p class="text-2xl">A wev developer from the Philippines. I'm a mechanical engineering undergrad who finds coding as a hobby and fell inlove in it. And now I decided to switch career and pursue what I love to do.
+        I love the challenges of coding specially problem solving. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills section -->
+  <section class="mt-32 w-[90%] mx-auto flex flex-col items-center justify-center bg-gradient-to-b from-[#373B44] to-[#4286f4] pt-6 text-color5 pb-12 border-8 border-red-400 text-white">
+    <h2 class="text-3xl md:text-5xl p-6 font-bold ">Skills</h2>
+    <div class="container p-6 grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <img src="./img/html5-svgrepo-com.svg" alt="" class="w-[40%]">
+        <p class="text-3xl">HTML</p>
+      </div>
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <img src="./img/css3-logo-svgrepo-com.svg" alt="" class="w-[40%] scale-125">
+        <p class="text-3xl">CSS</p>
+      </div>
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <img src="./img/bootstrap-svgrepo-com.svg" alt="" class="w-[40%]">
+        <p class="text-3xl">Bootstrap</p>
+      </div>
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <img src="./img/tailwindcss-icon-svgrepo-com.svg" alt="" class="w-[40%]">
+        <p class="text-3xl">Tailwind</p>
+      </div>
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <img src="./img/js-svgrepo-com.svg" alt="" class="w-[40%]">
+        <p class="text-3xl">JavaScript</p>
+      </div>
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <img src="./img/reactjs-svgrepo-com.svg" alt="" class="w-[40%] scale-90">
+        <p class="text-3xl">ReactJs</p>
+      </div>  
+    </div>
+  </section>
+
+  <!-- projects section -->
+  <section id="works" class="bg-color3">
+    <div class="p-6 md:px-12 mx-auto text-center text-white ">
+      <h2 class="text-3xl md:text-5xl md:mt-16 md:mb-6 mt-16 mb-6 font-bold">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <a href="https://froiod.github.io/Blurry-Loading/" target="_blank" class="">
+            <img src="./img/picasso.png" alt="Picasso Painting" class=" object-cover w-full h-60 lg:h-72 scale-90 md:scale-100 rounded-lg duration-200 hover:scale-95 md:hover:scale-105">
+            <p class="mb-4 text-2xl md:mt-4 font-semibold">
+                Picasso Painting
+            </p>
+        </a>
+        <a href="https://froiod.github.io/Shortly-Website-Frontend-Mentor/" target="_blank" class="">
+            <img src="./img/Shortly.png" alt="Picasso Painting" class=" object-cover w-full h-60 lg:h-72 scale-90 md:scale-100 rounded-lg duration-200 hover:scale-95 md:hover:scale-105">
+            <p class="mb-4 text-2xl md:mt-4 font-semibold">
+                Shortly Website
+            </p>
+        </a>
+        <a href="https://froiod.github.io/Expanding-Card/" target="_blank" class="">
+            <img src="./img/Expanding.png" alt="Picasso Painting" class="object-cover w-full h-60 lg:h-72 scale-90 md:scale-100 rounded-lg duration-200 hover:scale-95 md:hover:scale-105">
+            <p class="mb-4 text-2xl md:mt-4 font-semibold">
+                Expanding Card
+            </p>
+        </a>
+        <a href="" target="_blank" class="">
+            <img src="./img/Quote Generator.png" alt="Picasso Painting" class="object-cover w-full h-60 lg:h-72 scale-90 md:scale-100 rounded-lg duration-200 hover:scale-95 md:hover:scale-105">
+            <p class="mb-4 text-2xl md:mt-4 font-semibold">
+                Quote Generator
+            </p>
+        </a>
+        <a href="https://froiod.github.io/Loopstudio/" target="_blank" class="">
+            <img src="./img/loopstudio (1).png" alt="Picasso Painting" class="object-cover w-full h-60 lg:h-72 scale-90 md:scale-100 rounded-lg duration-200 hover:scale-95 md:hover:scale-105">
+            <p class="mb-4 text-2xl md:mt-4 font-semibold">
+                Loopstudio
+            </p>
+        </a>
+        <a href="https://froiod.github.io/Clipboar-Website-Udemy---Frontend-Mentor/" target="_blank" class="">
+            <img src="./img/clipboard.png" alt="Picasso Painting" class="object-cover w-full h-60 lg:h-72 scale-90 md:scale-100 rounded-lg duration-200 hover:scale-95 md:hover:scale-105">
+            <p class="mb-4 text-2xl md:mt-4 font-semibold">
+                Clipboard
+            </p>
+        </a>
+    </div>
+    </div>
+   </section>
+
+   <!-- contacts -->
+
+   <section id="contact" class="p-6 mx-auto text-center text-color1 bg-gray-800 text-white">
+    <div class="">
+      <h2 class="text-3xl md:text-5xl py-6">Let's work together...</h2>
+    </div>
+    <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-12 text-xl md:text-2xl my-6">
+      <a
+        href="https://www.facebook.com/paolo.guray"
+        target="_blank"
+        class="hover:translate-y-0.5 hover:transition-all"
+        ><i class="fab fa-facebook-square"></i> Facebook</a
+      >
+      <a
+        id="profile-link"
+        href="https://github.com/settings/profile"
+        target="_blank"
+        class="hover:translate-y-0.5 hover:transition-all"
+        ><i class="fab fa-github"></i> GitHub</a
+      >
+      <a
+        href="froiodpaolo@gmail.com"
+        target="_blank"
+        class="hover:translate-y-0.5 hover:transition-all"
+        ><i class="fab fa-twitter"></i> Twitter</a
+      >
+      <a href="mailto:froiodpaolo@gmail.com" class="hover:translate-y-0.5 hover:transition-all"><i class="fas fa-at"></i> Send a mail</a
+      >
+    </div>
+  </section>
+  
+  <script src="app.js"></script>
+</body>
+</html>
+
